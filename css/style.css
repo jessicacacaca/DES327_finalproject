@@ -811,6 +811,12 @@ span {
 	}
 }
 
+@media screen and (max-width: 360px) {
+	 .eat_title{
+		margin-top: 160%;
+	}
+}
+
 .eat {
 	font-size: 40px;
 	text-decoration: overline;
