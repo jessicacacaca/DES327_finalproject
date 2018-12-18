@@ -862,7 +862,11 @@ span {
 	
 }
 
-
+@media screen and (max-width: 360px) {
+	.eat_title {
+		margin-top: 160%;
+	}
+}
 
 /* Section 4 */
 
@@ -1086,6 +1090,16 @@ span {
 	}
 	.news_links li a {
 		font-size: 5px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.news_links li a {
+		font-size: 10px;
+	}
+
+	.upcoming {
+		width: 60%;
 	}
 }
 
