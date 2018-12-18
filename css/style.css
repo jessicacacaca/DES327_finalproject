@@ -945,6 +945,11 @@ span {
 }
 
 
+@media screen and (max-width: 360px) {
+	.t_5, .t_6 {
+		font-size: 10px;}
+}
+
 /* history.html */
 #history_html {
 	box-sizing: border-box;
