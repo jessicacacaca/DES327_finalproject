@@ -1,113 +1,196 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--1. Preview this html file in the browser. You should see a somewhat built one page site with some text about parallax. I've modified this example from W3 schools. Notice how everything is stacked on top of each other in a more traditional way. -->
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>dragonpapa</title>
+  </head>
 
-<!--2. To convert this to a parallax site, we need to add two attributes and values to our CSS. When you are adding the parallax effect, you are applying styles to the container div(s) that hold(s) a background image.  -->
+  <body>
+	
 
-<style>
-body, html {
-  height: 100%; /* Note that the height of the body and html is declared in %. In order to use % with .bgimg-1 (see below), we have to declare 100% height on the body and html tags.  */
-  margin: 0;
-  font: 15px "Lato", sans-serif;
-  color: #777;
-}
+	<!-- Header -->
+		<div id="header-backgd">
+		</div>
+        
+		<nav class="mainNav" id="menu_button">
+		 	<!-- hambergur -->
+        	<a href="javascript:void(0);" style="font-size: 30px;" class="icon" onclick="myFunction()">
+			&#9776;</a>
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65; /* This is just for style. Feel free to delete. */
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  /* 3. This is where the magic happens. To trigger the parallax effect, you need to add the attribute "background-attachment" along with the appropriate value. Use w3schools. HINT HINT. */
-}
+			<!-- logo -->
+			<div class="logo_center" id="logo">
+			    <a href="index.html"><img src="images/logo.png" style="width: 12%;"></a>
+            </div>
 
-/* 4. Parallax isn't very compatible on mobile devices so you will want to add a media query that changes the value of the background attachment when the width of your browser goes below a certain number. */
+			<!-- menu -->
+			<div class="menu">
+					<ul>
+					    <li><a href="#Products">PRODUCTS</a></li>
+						<li><a href="#History">HISTORY</a></li>		   
+	                    <li><a href="#News">NEWS/EVENTS</a></li>
+						<li><a href="#About">ABOUT</a></li>	
+					</ul>
+			</div>
+		
+		</nav>
 
-.bgimg-1 {
-  background-image: url("imgs/image_1.jpg");
-  min-height: 100%;
-}
+        <!-- homepage background and greeting title-->
+        <div class="dragonpapa">
+			<img class="bgimg_1" src="images/homepage1.jpg">
+		</div>
+		<div>
+			<span class="greeting">Welcome to Dragon Papa!</span>
+		</div>
 
-.bgimg-2 {
-  background-image: url("imgs/image_2.jpg");
-  min-height: 400px;
-}
+        <!-- product part  -->
+        <section id="Products">
+		<div class="products">	
+		    <h1>PRODUCTS</h1>
 
-.bgimg-3 {
-  background-image: url("imgs/image_3.jpg");
-  min-height: 400px;
-}
+		    <div class="products_img">
+		    	<div class="bgimg_mochi">
+		    		<img src="images/mochi_product.png" style="width: 50%;">
+		    	</div>
 
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
+				<div class="bgimg_2">
+					<img src="images/homepage2a.png" style="width: 80%;">
+				</div>
 
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
+				<div class="bgimg_ding">
+				   <img src="images/ding.png" style="width: 50%;">
+				</div>
+			</div>
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-</style>
-</head>
-<body>
+			<div class="pro_names">
 
-<div class="bgimg-1">
-  <div class="caption">
-    <span class="border">SCROLL DOWN</span>
-  </div>
-</div>
+			</div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Parallax Demo</h3>
-  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-</div>
+			<div>
+				<p class="keywords">Traditional | Handmade</p>
+			</div>
 
-<div class="bgimg-2">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
-  </div>
-</div>
+			<div class="readmore_1">
+				<div>
+	         	   <a style="color: white" class="backcolor" href="product.html">Read More</a>
+	            </div>
+	        </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
-</div>
+	    </div>
+	    </section>
 
-<div class="bgimg-3">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-  </div>
-</div>
+        <!-- history part -->
+        <section id="History">
+		<div class=history>
+			<h2>HISTORY</h2>
+			
+			<p class="article_1">
+				<span> What is Dragon’s beard candy? </span>
+				<br>
+				<br>
+				Dragon’s beard candy is not only a traditional Chinese sweet but also a handmade traditional art of China.  Dragon’s beard candy was initially created in China, but soon gained its popularity and became a regional delicacy in other parts of East Asia, as well as (and more recently) Canada, Singapore, the United States, Taiwan, Macau, and Japan.
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
-</div>
+			<br>
+			<br>
+			Do you know that Dragon’s Beard Candy was first only served the emperor of China two thousand years ago?
+			</p>
 
-<div class="bgimg-1">
-  <div class="caption">
-    <span class="border">COOL!</span>
-  </div>
-</div>
+			<div class="readmore_2">
+				<a style="color: white" class="backcolor" href="history.html">Read More</a>
+            </div>
 
-</body>
+			<div>
+				<img class="bgimg_3" src="images/han.png" style="width: 22%;">
+			</div>
+
+		</div>
+	    </section>
+        
+        <!-- news and events part -->
+        <section id="News">
+		<div class="news">
+			<h3>NEWS/EVENTS</h3>
+            
+            <!-- slideshows -->
+	        <div class="slideshow-container">
+		        <div class="mySlides fade">
+		        	<img src="images/show_2.JPG" style="width: 70%;">
+		        	<div class="text">New one</div>
+		        </div>
+
+		        <div class="mySlides fade">
+		        	<img src="images/show_3.JPG" style="width: 70%;">
+		        	<div class="text">New one</div>
+		        </div>
+
+		        <div class="mySlides fade">
+		        	<img src="images/show_4.JPG" style="width: 70%;">
+		        	<div class="text">New one</div>
+		        </div>
+
+		        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		    </div>
+	        <br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+			<div class="readmore_3">
+	         	<a style="color: white" class="backcolor" href="new_events.html">Read More</a>
+	        </div>
+			
+		</div>
+	    </section>
+
+		<!-- about us -->
+		<section id="About">
+		<div class="about">
+			<h4>ABOUT ME</h4>
+
+			<div class="readmore_4">
+	         	<a style="color: white" class="backcolor" href="about.html">Read More</a>
+	        </div>
+
+			<div>
+				<img class="bgimg_5" src="images/homepage5.png">
+			</div>
+
+			<p style="line-height: 1.5;" class="article_2">In August 2015, 30 years old <strong>Derek Tam</strong> opened a store with an area of just over 200 square feet to preserve the dragon’s toffee crafts of the five generations. <strong>This shop is called Dragon Papa, with the Hong Kong style nostalgic dessert as their sells point.</strong> After more than a year of opening, it has become a unique store of Chinatown in San Francisco, and the customers are endless, and it is most popular among tourists......</p>
+
+		</div>
+	    </section>
+
+		<!-- back to top -->
+		<div>
+			<a style="color:white; font-size:20px" class="back-to-top"href="#">TOP</a>
+		</div>
+
+        <!-- footer -->
+        <footer>
+        	<div id="footer-backgd">
+	        	<div class="footer_content">
+	        	    <a href="about.html">Contact</a>
+					<a href="#">Terms&Condition</a>
+					<a href="#">Policy</a>
+			    </div>
+
+                <!-- icon:facebook and yelp -->
+			    <div class="icon_button">
+			    	<a href="https://www.facebook.com/dragonpapadessert/" class="fa fa-facebook"></a>
+			    	<a href="https://www.yelp.com/biz/dragon-papa-dessert-san-francisco" class="fa fa-yelp"></a>
+			    </div>   
+			    
+			    <p class="copyRight">Copyright@Dragon Papa Inc. All rights reserved.</p>
+		      
+		    </div>
+        </footer>
+	<script type="text/javascript" src="js/nav.js"></script>
+	
+  </body>
 </html>
